@@ -1,0 +1,25 @@
+<h1>Removing Unneeded Files</h1>
+
+<p>We always recommend making a new Git branch (not master) for each Instant Answer or project you work on, but it's easy to forget. Sometimes we receive pull requests with an extra file also included by mistake. If that happens to you, and if the pull request is not yet merged, don't panic! Here's how to fix it...</p>
+
+<p>Firstly, check what branch you're on and what files are being tracked or staged in Git. In fact, do this at the start of every Git session:</p>
+
+<p><code>git status</code></p>
+
+<p>Study the output to make sure no other stray files are there, and to make sure you're on the right branch. Now you can remove the extra file (called "extra-file.json" in this example) from your local environment:</p>
+
+<p><code>rm extra-file.json</code></p>
+
+<p>Then also remove it from Git:</p>
+
+<p><code>git rm extra-file.json</code></p>
+
+<p>Now make a new commit and add an explanatory message:</p>
+
+<p><code>git commit -m "Removed extra file"</code></p>
+
+<p>Finally, push this change (commit) to your open pull request:</p>
+
+<p><code>git push origin [my-branch]</code></p>
+
+<p>There you go. You're back to normal and can relax!</p>

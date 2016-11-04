@@ -1,0 +1,24 @@
+<h1>Helmet for NodeJS</h1>
+
+<p>Following on from <a href="https://duck.co/blog/post/334/weekly-update-121-better-results-for-more-languages#tip">last week's NodeJS tip</a>, here's another handy hint, this time to help keep your website or app secure.</p>
+
+<p>If you're using the popular Express framework, there's middleware called Helmet that provides a good base layer of protection. Best of all, you can install and use it really easily:</p>
+
+<p><code>npm install helmet --save</code></p>
+
+<p>Once installed, you simply refer to it in your code (e.g. <code>server.js</code> or <code>app.js</code>) like so:</p>
+
+<p><code>var helmet = require('helmet');</code><br>
+<code>app.use(helmet());</code></p>
+
+<p>This will provide various secure features such as:</p>
+
+<ul>
+  <li>Protection against cross-site scripting attacks (XSS)</li>
+  <li>Headers to prevent man-in-the-middle attacks (MITM) and enforce secure connections</li>
+  <li>Prevention of malicious MIME sniffing</li>
+  <li>Removal of <code>X-Powered-By</code> header to hide server information</li>
+  <li>Protection against clickjacking</li>
+</ul>
+
+<p>When developing a new web app or site, security is sometimes an afterthought. Helmet makes it easy to add a good foundation upon which you can build the security you need right from the start. Whether you use Express or not, their website has a useful list of <a href="https://expressjs.com/en/advanced/best-practice-security.html">best practices for NodeJS security</a> and details of what Helmet provides.</p>

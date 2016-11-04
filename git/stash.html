@@ -1,0 +1,18 @@
+<h1>Stash Unneeded Files</h1>
+
+<p><a href="https://duck.co/blog/post/322/weekly-update-113-making-swift-sing">Last time</a> we looked at fixing unneeded files in a pull request, but what about unneeded files when just pulling down files? Before creating a new branch it's a good idea to get the latest version of an upstream repository, but sometimes new or edited local files prevent it. You're happy overwriting them but Git refuses. Here's how to fix it and make Git happy.</p>
+
+<p>Firstly, let's try pulling the upstream files and see what happens:</p>
+
+<p><code>git pull upstream master</code></p>
+
+<p>The other day I did this and got an error because of local files that had changed, with a message saying "Please, commit your changes or stash them before you can merge." Git then showed a list of the files that caused the conflict. Luckily it's easy to overwrite the local changes. Very simply, we just checkout the local files into a kind of no-man's land where you can forget about them:</p>
+
+<p><code>git checkout -- [filename]</code></p>
+
+<p>Do this for each file that the error message warned you about and then you can pull as usual:</p>
+
+<p><code>git pull upstream master</code></p>
+
+<p>Please remember that this is only for files that you're happy to overwrite, in which case it's problem solved!</p>
+

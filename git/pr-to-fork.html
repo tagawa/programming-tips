@@ -1,0 +1,21 @@
+<h1>Sending a PR to a Fork</h1>
+
+<p>There may be times when you leave feedback on somebody's pull request but they're too busy to implement it, or perhaps you think it's just faster to do it yourself. Sending a pull request to that person's fork could help in such situations, and here's how to do it.</p>
+
+<p>First, make a copy of their branch locally:</p>
+
+<p><code>git remote add [temp-name] https://github.com/[their-username]/[repository-name]</code></p>
+
+<p><code>git fetch [temp-name]</code></p>
+
+<p><code>git checkout [temp-name]/master</code> (or whatever branch they're using)</p>
+
+<p><code>git checkout -b [my-branch]</code></p>
+
+<p>Then make your changes, and commit and push as normal:</p>
+
+<p><code>git commit -am "[your message]"</code></p>
+
+<p><code>git push origin [my-branch]</code></p>
+
+<p>Now go to the user's forked repo on <a href="https://github.com/">GitHub</a> to send this branch as a pull request to their branch (note that it may not be <code>master</code>) &mdash; all they have to do is click the merge button and that's it! Big thanks to <a href="https://github.com/guiltydolphin">GuiltyDolphin</a> for teaching me how to do this magic (ʘ‿ʘ)</p>

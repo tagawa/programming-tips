@@ -1,0 +1,20 @@
+<h1>Nodemon File Watcher</h1>
+
+<p>Here's a useful tip if you're using (or intending to use) <a href="https://duckduckgo.com/?q=nodejs">NodeJS</a>. As you probably know, the usual way to start a server instance to view a web page or app is:</p>
+
+<p><code>node server.js</code></p>
+
+<p>Simple. And then you make a few edits to your code, use <key>Ctrl+C</key> in the terminal to stop the server, and restart with the above command again.</p>
+
+<p>Stop! There's a better way...</p>
+
+<p>Use a file watcher and you'll never have to restart the server manually. A popular choice is to use Nodemon, and you can install it from the command line with:</p>
+
+<p><code>npm install -g nodemon</code></p>
+
+<p>Next, to start the server don't use <code>node</code> but use this instead:</p>
+
+<p><code>nodemon server.js</code></p>
+
+<p>As long as Nodemon is running, you can make changes in your code and simply refresh the page in your browser to see them take effect. No more <key>Ctrl+C</key>!</p>
+

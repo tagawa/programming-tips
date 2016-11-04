@@ -1,0 +1,11 @@
+<h1>How to Use Git Log</h1>
+
+<p>Back to Git this week, in particular making Git beautiful! You may know there's a <code>git log</code> command for showing the history of your Git activity. It's helpful but not very concise or skimmable. Fortunately, there are a few options that transform the command's output.</p>
+
+<p>Let's cut to the chase &mdash; this is a far better way to use <code>git log</code>:</p>
+
+<p><code>git log --graph --oneline --decorate --all</code></p>
+
+<p>As you can probably tell, it will show a basic <strong>graph</strong> of Git activity with summaries reduced to <strong>one line</strong>. It <strong>decorates</strong> the view with branch names and makes sure that <strong>all</strong> activity is included. Give it a try in any Git repository to see the effect.</p>
+
+<p>And of course, because it's quite a long command you could save time by making an alias for it such as <code>gitgraph</code>, as we <a href="https://duck.co/blog/post/309/weekly-update-102-a-slack-milestone#tip">discussed previously</a>.</p>

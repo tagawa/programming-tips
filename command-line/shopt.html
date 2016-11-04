@@ -1,0 +1,15 @@
+<h1>shopt (Shell Options)</h1>
+
+<p>Remember we talked about using aliases to fix typos recently? ([It's here if you missed it](https://duck.co/blog/post/309/weekly-update-102-a-slack-milestone#tip)). Well here's another typo tip, this time using `shopt`. It's a built-in BASH command, short for "shell options", and contains this gem:</p>
+
+<p><code>`shopt -s cdspell`</code></p>
+
+<p>Running this command doesn't seem to do anything at first, but when you then move directories using `cd`, it will try to fix any spelling mistakes you make. For example, all of these:</p>
+
+<p><code>`cd Documnets`</code></p>
+
+<p><code>`cd Document`</code></p>
+
+<p><code>`cd Dcuments`</code></p>
+
+<p>will be understood and you'll be moved to the `Documents` directory. Pretty cool, huh? Don't forget, you'll need to add the `shopt -s cdspell` command to your .bashrc or .bash_profile file for this to work every time you open the terminal.</p>

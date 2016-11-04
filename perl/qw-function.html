@@ -1,0 +1,15 @@
+<h1>The qw Function</h1>
+
+<p>As you probably know, we use Perl a lot to power DuckDuckGo and our Instant Answers. Personally, I'm still learning the unique features of Perl but there's one cool thing I'd like to share that I haven't seen in other languages.</p>
+
+<p>Very often we need to makes lists of items, sometimes to quickly test a much larger list. In Perl this can be done without quotes and commas using the <code>qw</code> function, for example:</p>
+
+<p><code>my @list = qw(apple orange banana);</code></p>
+
+<p>Perl will understand this as though you've written:</p>
+
+<p><code>my @list = ("apple", "orange", "banana");</code></p>
+
+<p>As you can see, it's just a small reduction in characters but not only does it save time, less typing also means less chance of bugs.</p>
+
+<p>There are other similar functions such as <code>qq</code>, <code>qx</code> and just <code>q</code> which also handle strings and quotes, so I'll let you investigate those for your homework :-)</p>
