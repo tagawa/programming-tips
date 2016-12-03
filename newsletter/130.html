@@ -1,0 +1,149 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+<!-- If you delete this meta tag, the ground will open and swallow you. -->
+<meta name="viewport" content="width=device-width" />
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>DuckDuckHack Developer Newsletter</title>
+
+<link rel="stylesheet" type="text/css" href="stylesheets/email.css" >
+
+</head>
+
+<body bgcolor="#FFFFFF" topmargin="0" leftmargin="0" marginheight="0" marginwidth="0">
+
+<!-- HEADER -->
+<table class="head-wrap" bgcolor="#60a5da">
+	<tr>
+		<td></td>
+		<td class="header container" align="">
+
+			<!-- /content -->
+			<div class="content">
+				<table bgcolor="#60a5da" width="100%">
+					<tr>
+						<td><img src="https://duckduckgo.com/logos/ddh_news_logo.png" /></td>
+						<td align="right"><h6 class="collapse">DuckDuckHack</h6></td>
+					</tr>
+				</table>
+			</div><!-- /content -->
+
+		</td>
+		<td></td>
+	</tr>
+</table><!-- /HEADER -->
+
+<!-- BODY -->
+<table class="body-wrap" bgcolor="">
+	<tr>
+		<td></td>
+		<td class="container" align="" bgcolor="#FFFFFF">
+
+			<!-- content -->
+			<div class="content">
+				<table>
+					<tr>
+						<td>
+							<h1>Weekly Update 130: Good news from behind-the-scenes</h1>
+
+                            <p>Hello contributors,</p>
+
+                            <p>News from the DuckDuckHack team this week is that we've made behind-the-scenes improvements to make working on Fathead Instant Answers (IAs) much easier, focusing on two problems.</p>
+
+                            <p><strong>Problem 1:</strong> User search queries often don't exactly match documentation articles. For example, a user may search for "css transparency" and no Instant Answer is shown, whereas there's an article for CSS opacity which is perfectly relevant. We can add redirects (aliases) within Fatheads but it requires knowledge of Fathead code.</p>
+
+                            <p><strong>Solution:</strong> Maria has created the ability to simply supply a comma-separated text file of existing article titles and their aliases, and then the relevant redirects will automatically be added. No coding required! This is suitable for people looking to make their first pull request and we currently have an experimental task open, looking for a developer:<br>
+                            <a href="https://github.com/duckduckgo/zeroclickinfo-fathead/issues/172">Can I Use: Broaden search results by adding more aliases</a></p>
+
+                            <p><strong>Problem 2:</strong> When creating a Fathead, it's not easy to test it on the <a href="https://beta.duckduckgo.com/?q=test&t=h_&ia=iatesting">beta server</a>. Fatheads have a different process to Goodies and Spices which complicates deployment and beta installation.</p>
+
+                            <p><strong>Solution:</strong> Jason and John have worked quickly to make easy beta deployment a reality for Fathead Instant Answers! With documentation lookups being so essential for programmers, Fatheads are a key part of the Programming Mission. This improvement should reduce frustration when developing them and lead to faster releases.</p>
+
+                            <p>And as if that wasn't enough, we also have a design proposal we want to share with you and get feedback on, so look out for that in your inbox very soon :-)</p>
+
+                            <p>In the meantime, here are some issues we're currently looking for help with...</p>
+                        </td>
+					</tr>
+				</table>
+			</div><!-- /content -->
+
+			<!-- content -->
+			<div class="content"><table bgcolor="">
+				<tr>
+					<td class="small" width="40px" style="vertical-align: top; padding-right:10px;"><img src="https://duck.co/static/img/email_icons/pencil.png" /></td>
+					<td>
+						<h3>Weekend Warriors</h3>
+
+                        <ul>
+                            <li><a href="https://github.com/duckduckgo/zeroclickinfo-fathead/issues/540">Python: Create New PEP Fathead</a>
+                            <p>We get queries for Python PEPs by number, e.g. "pep 249", so this task is to create an Instant Answer to cover those.</p></li>
+                            <li><a href="https://github.com/duckduckgo/zeroclickinfo-fathead/issues/334">MDN JS: Include uncategorized articles in the Instant Answer result</a>
+                            <p>There are many more articles with no category that we should include in this Instant Answer to widen its coverage.</p></li>
+                            <li><a href="https://github.com/duckduckgo/zeroclickinfo-fathead/issues/552">Python: Improve Django Fathead (or Create new Fathead) to cover more documentation</a>
+                            <p>The existing Django Builtins Fathead only covers a small portion of the Django docs. There is much more to the documentation which should be covered by an Instant Answer.</p></li>
+                        </ul>
+
+						<a class="btn" href="https://github.com/duckduckgo/zeroclickinfo-fathead/issues?utf8=%E2%9C%93&q=is%3Aopen%20is%3Aissue%20label%3A%22Priority%3A%20High%22%20label%3A%22Mission%3A%20Programming%22">More high priority fix ideas &raquo;</a>
+					</td>
+				</tr>
+			</table></div><!-- /content -->
+
+			<!-- content -->
+			<div class="content"><table bgcolor="">
+				<tr>
+					<td class="small" width="40px" style="vertical-align: top; padding-right:10px;"><img src="https://duck.co/static/img/email_icons/pencil.png" /></td>
+					<td>
+						<h3>5-minute-ish Fixes</h3>
+
+                        <ul>
+                            <li><a href="https://github.com/duckduckgo/zeroclickinfo-fathead/issues/515">NodeJS: List all topic titles and language features to help measure coverage</a>
+                            <p>For every Fathead, we need to gather the set of articles we wish to provide coverage for.
+                          Create a cover/ directory containing text files that list all the topic titles and language features to cover. These lists will then be used as Unit tests to help you measure the Fathead's coverage.</p></li>
+                            <li><a href="https://github.com/duckduckgo/zeroclickinfo-fathead/issues/521">PHP: List all topic titles and language features to help measure coverage</a>
+                            <p>The same as above but for PHP. User @uda has kindly suggested two comprehensive links for reference.</p></li>
+                            <li><a href="https://github.com/duckduckgo/zeroclickinfo-fathead/issues/522">Python: List all topic titles and language features to help measure coverage</a>
+                            <p>You guessed it! Python should get the same treatment.</p></li>
+                        </ul>
+
+						<a class="btn" href="https://github.com/duckduckgo/zeroclickinfo-fathead/issues?utf8=%E2%9C%93&q=is%3Aopen%20is%3Aissue%20label%3A%22Mission%3A%20Programming%22%20label%3A%22Low-Hanging%20Fruit%22">More quick fix ideas &raquo;</a>
+					</td>
+				</tr>
+			</table></div><!-- /content -->
+
+			<!-- content -->
+			<div class="content"><table bgcolor="">
+				<tr>
+					<td class="small" width="40px" style="vertical-align: top; padding-right:10px;"><img src="https://duck.co/static/img/email_icons/lightbulb.png" /></td>
+					<td>
+						<h3>Quick Tip</h3>
+
+                        <p>Here's a code searching tip. Obviously for quick documentation lookups we recommend using <a href="https://duckduckgo.com">the only search engine with duck power</a>! However sometimes we want to see how other developers are using certain functions within their code in live projects. In these cases, GitHub can be a very effective learning tool.</p>
+
+                        <p>GitHub has a highly configurable <a href="https://github.com/search/advanced">advanced search</a> allowing you to look through thousands of repositories. Admittedly some of these may be proof-of-concept snippets or spaghetti code, so a helpful feature is being able to filter by number of stars. For example, if I want to see how other developers are using <code>mediaDevices.getUserMedia</code> in JavaScript, I could restrict the search to repositories with 1,000 stars and above to try to get higher quality examples. It doesn't necessarily guarantee you'll find reliable, efficient, secure code but in my experience it's usually very helpful. The results for such a search might look like this: <a href="https://github.com/search?utf8=%E2%9C%93&q=mediadevices.getusermedia+language%3AJavaScript+stars%3A%3E1000&type=Code&ref=searchresults">See search results</a></p>
+
+                        <p>And speaking of stars, please take a moment to star <a href="https://github.com/duckduckgo/">our GitHub repositories</a> if you contribute to them or find them useful. It helps them to attract attention and maintain interest.</p>
+					</td>
+				</tr>
+			</table></div><!-- /content -->
+
+			<!-- content -->
+			<div class="content">
+				<table>
+					<tr>
+						<td>
+                            <p>That's all for now — enjoy your weekend!</p>
+
+							<p>- The DuckDuckGo Staff</p>
+						</td>
+					</tr>
+				</table>
+			</div><!-- /content -->
+
+		</td>
+		<td></td>
+	</tr>
+</table><!-- /BODY -->
+
+</body>
+</html>
