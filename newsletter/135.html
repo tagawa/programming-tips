@@ -1,0 +1,179 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+<!-- If you delete this meta tag, the ground will open and swallow you. -->
+<meta name="viewport" content="width=device-width" />
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>DuckDuckHack Developer Newsletter</title>
+
+<link rel="stylesheet" type="text/css" href="stylesheets/email.css" >
+
+</head>
+
+<body bgcolor="#FFFFFF" topmargin="0" leftmargin="0" marginheight="0" marginwidth="0">
+
+<!-- HEADER -->
+<table class="head-wrap" bgcolor="#60a5da">
+	<tr>
+		<td></td>
+		<td class="header container" align="">
+
+			<!-- /content -->
+			<div class="content">
+				<table bgcolor="#60a5da" width="100%">
+					<tr>
+						<td><img src="https://duckduckgo.com/logos/ddh_news_logo.png" /></td>
+						<td align="right"><h6 class="collapse">DuckDuckHack</h6></td>
+					</tr>
+				</table>
+			</div><!-- /content -->
+
+		</td>
+		<td></td>
+	</tr>
+</table><!-- /HEADER -->
+
+<!-- BODY -->
+<table class="body-wrap" bgcolor="">
+	<tr>
+		<td></td>
+		<td class="container" align="" bgcolor="#FFFFFF">
+
+			<!-- content -->
+			<div class="content">
+				<table>
+					<tr>
+						<td>
+							<h1>Weekly Update 135: Helpful GitHub improvements</h1>
+
+                            <p>Hello contributors,</p>
+
+                            <p>There have been some important changes to GitHub recently and I'd like to highlight a couple that are good news for DuckDuckHackers. In particular they'll be helpful when there are problems with pull requests.</p>
+
+                            <h4>Maintainer changes to PRs</h4>
+
+                            <p>Firstly, you can now <a href="
+                            https://help.github.com/articles/allowing-changes-to-a-pull-request-branch-created-from-a-fork/
+                            ">allow other developers to change your pull request (PR)</a>. If enabled, this means project maintainers and those with push access can make commits to your PR, fixing problems or editing code. There are a couple of cases where this is particularly useful:</p>
+
+                            <ul>
+                              <li>When you've done most of the coding but aren't able to finish it off.</li>
+                              <li>When you've been asked to make a change to a PR but are not sure what you should do.</li>
+                            </ul>
+
+                            <p><img src="https://i.imgur.com/78ksOMr.png" alt="Screenshot showing GitHub option for allowing changes to a pull request"></p>
+
+                            <p>This feature seems to be enabled by default but to make sure, check the "Allow edits from maintainers" option in the sidebar of your pull request, as in the screenshot above.</p>
+
+                            <h4>Easy merge conflict fixing</h4>
+
+                            <p>Secondly, those dreaded <a href="https://github.com/blog/2293-resolve-simple-merge-conflicts-on-github">merge conflicts can now be kept under control</a> with a new feature within the GitHub UI. Although it doesn't happen often in our repositories, if you do get a merge conflict message you can make changes to the problematic file without using the command line or even your local editor. The PR page itself will display an editable window where you remove sections that are no longer necessary and then mark the conflict as resolved. It's not suitable for complicated merge conflicts but in most cases it should avoid a lot of stress!</p>
+
+                            <p>And with these improvements to the workflow, here are a few of the Instant Answer issues we're looking for help with...</p>
+                        </td>
+					</tr>
+				</table>
+			</div><!-- /content -->
+
+			<!-- content -->
+			<div class="content"><table bgcolor="">
+				<tr>
+					<td class="small" width="40px" style="vertical-align: top; padding-right:10px;"><img src="https://duck.co/static/img/email_icons/pencil.png" /></td>
+					<td>
+						<h3>Weekend Warriors</h3>
+
+                        <ul>
+                            <li><a href="https://github.com/duckduckgo/zeroclickinfo-fathead/issues/664">Haskell: Create New Haskell Reference Fathead</a>
+                            <p>This would look up information from the docs at wiki.haskell.org to show code descriptions and examples.</p></li>
+
+                            <li><a href="https://github.com/duckduckgo/zeroclickinfo-fathead/issues/511">NodeJS Bug: not triggering for some articles</a>
+                            <p>We should investigate why some articles don't trigger, e.g. "node dns lookupService", "node child disconnect", "node http message service".</p></li>
+                        </ul>
+
+						<a class="btn" href="https://github.com/duckduckgo/zeroclickinfo-fathead/issues?utf8=%E2%9C%93&q=is%3Aopen%20is%3Aissue%20label%3A%22Priority%3A%20High%22%20label%3A%22Mission%3A%20Programming%22">More high priority fix ideas &raquo;</a>
+					</td>
+				</tr>
+			</table></div><!-- /content -->
+
+			<!-- content -->
+			<div class="content"><table bgcolor="">
+				<tr>
+					<td class="small" width="40px" style="vertical-align: top; padding-right:10px;"><img src="https://duck.co/static/img/email_icons/pencil.png" /></td>
+					<td>
+						<h3>5-minute-ish Fixes</h3>
+
+                        <ul>
+                            <li><a href="https://github.com/duckduckgo/zeroclickinfo-fathead/issues/506">Apple Docs iOS: Add coverage for attributes</a>
+                            <p>We should have coverage for attributes such as <code>UIControl isEnabled</code>, <code>UIControl isHighlighted</code>, etc.</p></li>
+
+                            <li><a href="https://github.com/duckduckgo/zeroclickinfo-fathead/issues/501">Apple Docs macOS Bug: Stop triggering on irrelevant search queries</a>
+                            <p>Apple Docs macOS is overtriggering, which means it triggers on queries that are not relevant, and this results in a poor search experience for users.</p></li>
+                        </ul>
+
+						<a class="btn" href="https://github.com/duckduckgo/zeroclickinfo-fathead/issues?utf8=%E2%9C%93&q=is%3Aopen%20is%3Aissue%20label%3A%22Mission%3A%20Programming%22%20label%3A%22Low-Hanging%20Fruit%22">More quick fix ideas &raquo;</a>
+					</td>
+				</tr>
+			</table></div><!-- /content -->
+
+			<!-- content -->
+			<div class="content"><table bgcolor="">
+				<tr>
+					<td class="small" width="40px" style="vertical-align: top; padding-right:10px;"><img src="https://duck.co/static/img/email_icons/lightbulb.png" /></td>
+					<td>
+						<h3>Quick Tip</h3>
+
+                        <p>Credit goes to <a href="https://twitter.com/estellevw/status/816717351492063232">Estelle Weyl for this CSS tip</a>, although it's more of a sneaky hack (but still worth knowing).</p>
+
+                        <p>As you may know, browsers use <em>specificity</em> when calculating what CSS properties to apply to HTML elements. This means a very specific selector (e.g. <code>ul#animals li</code>) would take precedence over a more vague selector (e.g. <code>li</code>), regardless of their order in the CSS file. Some people use <code>!important</code> after the value to override this but it's generally seen as bad practice. Estelle's alternative way of overriding specificity is still hacky but better than <code>!important</code> and not widely known. Let's see an example...</p>
+
+                        <p>Assuming we have a list of animals, we can apply styles to all items like so:</p>
+
+                        <pre><code>ul#animals li {
+                           font-size: 2em;
+                           color: black;
+                        }</code></pre>
+
+                        <p>If we try to change the color of a single item that has a <code>#duck</code> ID, the following code will have no effect:</p>
+
+                        <pre><code>#duck {
+                          color: red;
+                        }</code></pre>
+
+                        <p>However, simply typing the property twice changes the specificity and in this case will change the color to red:</p>
+
+                        <pre><code>#duck#duck {
+                          color: red;
+                        }</code></pre>
+
+                        <p>It seems silly but it works! Admittedly this kind of hack is something you should probably avoid in practice, but knowing of it's existence is helpful, especially when working with code from other developers.</p>
+
+                        <p>You can read more about <a href="https://css-tricks.com/specifics-on-css-specificity/">CSS specificity here</a> and <a href="http://jsbin.com/funukafoho/edit?html,css,output">try out this example for yourself at JS Bin</a>.</p>
+					</td>
+				</tr>
+			</table></div><!-- /content -->
+
+			<!-- content -->
+			<div class="content">
+				<table>
+					<tr>
+						<td>
+                            <h3>One more thing</h3>
+
+                            <p>From 2017 we'll publish this newsletter less frequently, probably about once a month. If there's particular content you'd like to see or tips you want to share, please leave a comment below or let us know on <a href="https://twitter.com/duckduckhack">Twitter</a>.</p>
+
+                            <p>That's all for now — see you next time!</p>
+
+							<p>- The DuckDuckGo Staff</p>
+						</td>
+					</tr>
+				</table>
+			</div><!-- /content -->
+
+		</td>
+		<td></td>
+	</tr>
+</table><!-- /BODY -->
+
+</body>
+</html>
