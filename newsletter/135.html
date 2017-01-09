@@ -130,21 +130,21 @@
                         <p>Assuming we have a list of animals, we can apply styles to all items like so:</p>
 
                         <pre><code>ul#animals li {
-                           font-size: 2em;
-                           color: black;
-                        }</code></pre>
+   font-size: 2em;
+   color: black;
+}</code></pre>
 
                         <p>If we try to change the color of a single item that has a <code>#duck</code> ID, the following code will have no effect:</p>
 
                         <pre><code>#duck {
-                          color: red;
-                        }</code></pre>
+  color: red;
+}</code></pre>
 
                         <p>However, simply typing the property twice changes the specificity and in this case will change the color to red:</p>
 
                         <pre><code>#duck#duck {
-                          color: red;
-                        }</code></pre>
+  color: red;
+}</code></pre>
 
                         <p>It seems silly but it works! Admittedly this kind of hack is something you should probably avoid in practice, but knowing of it's existence is helpful, especially when working with code from other developers.</p>
 
