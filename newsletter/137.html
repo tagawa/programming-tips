@@ -1,0 +1,145 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+<!-- If you delete this meta tag, the ground will open and swallow you. -->
+<meta name="viewport" content="width=device-width" />
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>DuckDuckHack Developer Newsletter</title>
+
+<link rel="stylesheet" type="text/css" href="stylesheets/email.css" >
+
+</head>
+
+<body bgcolor="#FFFFFF" topmargin="0" leftmargin="0" marginheight="0" marginwidth="0">
+
+<!-- HEADER -->
+<table class="head-wrap" bgcolor="#60a5da">
+	<tr>
+		<td></td>
+		<td class="header container" align="">
+
+			<!-- /content -->
+			<div class="content">
+				<table bgcolor="#60a5da" width="100%">
+					<tr>
+						<td><img src="https://duckduckgo.com/logos/ddh_news_logo.png" /></td>
+						<td align="right"><h6 class="collapse">DuckDuckHack</h6></td>
+					</tr>
+				</table>
+			</div><!-- /content -->
+
+		</td>
+		<td></td>
+	</tr>
+</table><!-- /HEADER -->
+
+<!-- BODY -->
+<table class="body-wrap" bgcolor="">
+	<tr>
+		<td></td>
+		<td class="container" align="" bgcolor="#FFFFFF">
+
+			<!-- content -->
+			<div class="content">
+				<table>
+					<tr>
+						<td>
+							<h1>Dev Update 137: New high impact tasks</h1>
+
+                            <p>Hello contributors,</p>
+
+                            <p>You may have noticed we've made a few changes to the <a href="https://duckduckhack.com/issues">DuckDuckHack list of main issues</a>. Whereas it used to be dedicated to the Programming Mission, now it lists general high priority tasks that we're looking for help with. These tasks should have the biggest impact and will include issues from all our repositories, not just Instant Answers.</p>
+
+                            <p><img src="https://i.imgur.com/MdXyPSc.png" alt="Screenshot of DuckDuckHack issues list"></p>
+
+                            <p>The list will be updated as we generate and categorize more issues, but in the meantime below is a selection of tasks we'd love help with...</p>
+                        </td>
+					</tr>
+				</table>
+			</div><!-- /content -->
+
+			<!-- content -->
+			<div class="content"><table bgcolor="">
+				<tr>
+					<td class="small" width="40px" style="vertical-align: top; padding-right:10px;"><img src="https://duck.co/static/img/email_icons/pencil.png" /></td>
+					<td>
+						<h3>Weekend Warriors</h3>
+
+                        <ul>
+                            <li><a href="https://github.com/duckduckgo/zeroclickinfo-goodies/issues/4004">Time Zone: Support "Time in [time_zone]" queries</a>
+                            <p>For example, we should start by getting queries such as "time in gmt" working, and then extend it to cover countries and even cities.</p></li>
+
+                            <li><a href="https://github.com/duckduckgo/zeroclickinfo-spice/issues/3170">GitHub: Extend IA to search issues</a>
+                            <p>We should extend the existing Github Instant Answer to be able to search for issues or create new ones.</p></li>
+                        </ul>
+
+						<a class="btn" href="https://duckduckhack.com/issues">More high priority fix ideas &raquo;</a>
+					</td>
+				</tr>
+			</table></div><!-- /content -->
+
+			<!-- content -->
+			<div class="content"><table bgcolor="">
+				<tr>
+					<td class="small" width="40px" style="vertical-align: top; padding-right:10px;"><img src="https://duck.co/static/img/email_icons/pencil.png" /></td>
+					<td>
+						<h3>5-minute-ish Fixes</h3>
+
+                        <ul>
+                            <li><a href="https://github.com/duckduckgo/zeroclickinfo-spice/issues/3195">Nutrition: Update with appropriate triggers</a>
+                            <p>The triggering for this IA has not been optimized. If we can improve it, more users will be able to discover it.</p></li>
+
+                            <li><a href="https://github.com/duckduckgo/zeroclickinfo-spice/issues/3196">Nutrition: Handle custom quantity in query</a>
+                            <p>We'd like help swapping out Nutrionix's current API for their natural language API.</p></li>
+                        </ul>
+
+						<a class="btn" href="https://github.com/duckduckgo/zeroclickinfo-goodies/issues?utf8=%E2%9C%93&q=is%3Aissue%20is%3Aopen%20label%3A%22Low-Hanging%20Fruit%22%20-label%3A%22Status%3A%20Work%20In%20Progress%22">More quick fix ideas &raquo;</a>
+					</td>
+				</tr>
+			</table></div><!-- /content -->
+
+			<!-- content -->
+			<div class="content"><table bgcolor="">
+				<tr>
+					<td class="small" width="40px" style="vertical-align: top; padding-right:10px;"><img src="https://duck.co/static/img/email_icons/lightbulb.png" /></td>
+					<td>
+						<h3>Quick Tip</h3>
+
+                        <p>Here's something I use a lot at the command line — especially handy when you make a typing error. It's one of many keyboard shortcuts but definitely worth memorizing. Are you ready? Here it is:</p>
+
+                        <p><code>[Ctrl]+[A]</code></p>
+
+                        <p>That will take your cursor to the start of the current command, before you press <kbd>Enter<kbd>. You can remember it by associating <kbd>A</kbd> with the start of the alphabet, and therefore the start of the line you're typing. So when would you use it? Let's say I've just typed this command:</p>
+
+                        <p><code>fmpeg -i myvideo.mp4 -acodec libvorbis -aq 5 -ac 2 -qmax 25 -threads 2 myvideo.webm</code></p>
+
+                        <p>Notice the typo? <code>fmpeg</code> should be <code>ffmpeg</code> so I just hit <code>[Ctrl]+[A]</code> to jump to the start of the line and correct it, saving lots of cursor pressing. Very simple but a big timesaver over the years.</p>
+					</td>
+				</tr>
+			</table></div><!-- /content -->
+
+			<!-- content -->
+			<div class="content">
+				<table>
+					<tr>
+						<td>
+                            <h3>One more thing</h3>
+
+                            <p>As mentioned previously, we're now publishing this newsletter less frequently, probably about once a month. If there's particular content you'd like to see or tips you want to share, please reply to this email or let us know on <a href="https://twitter.com/duckduckhack">Twitter</a>.</p>
+
+                            <p>That's all for now — stay safe everyone!</p>
+
+							<p>- The DuckDuckGo Staff</p>
+						</td>
+					</tr>
+				</table>
+			</div><!-- /content -->
+
+		</td>
+		<td></td>
+	</tr>
+</table><!-- /BODY -->
+
+</body>
+</html>
